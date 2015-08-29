@@ -23,5 +23,6 @@
         android:text="Ok"
         android:id="@+id/button"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonClick" />
 </RelativeLayout>

@@ -1,26 +1,22 @@
 package chaityashah.com.parkitforward;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class ParkActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_park);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_park, menu);
         return true;
     }
 
@@ -37,17 +33,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-//parkitforward.azurewebsites.net/users/register
-    public void onButtonClick(View v) {
-        Button button = (Button) v;
-        EditText vinObj = (EditText) findViewById(R.id.vinText);
-        String vin = vinObj.toString();
-
-        // post request to send VIN and android id
-
-        Intent intent = new Intent(this, ParkActivity.class);
-        startActivity(intent);
-
     }
 }
