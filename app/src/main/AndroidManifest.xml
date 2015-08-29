@@ -23,16 +23,15 @@
             android:name=".SplashScreen"
             android:label="@string/app_name" >
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
-
         </activity>
-
         <activity
             android:name=".ParkActivity"
             android:label="@string/title_activity_park" >
@@ -48,6 +47,10 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" >
+        </activity>
+        <activity
+            android:name=".LeavingActivity"
+            android:label="@string/title_activity_leaving" >
         </activity>
     </application>
 

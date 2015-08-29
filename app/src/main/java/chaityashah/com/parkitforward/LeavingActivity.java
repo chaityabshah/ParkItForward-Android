@@ -1,27 +1,22 @@
 package chaityashah.com.parkitforward;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 
-public class ParkActivity extends AppCompatActivity {
+public class LeavingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_park);
-
+        setContentView(R.layout.activity_leaving);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_park, menu);
+        getMenuInflater().inflate(R.menu.menu_leaving, menu);
         return true;
     }
 
@@ -38,12 +33,5 @@ public class ParkActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-    public void onButtonClick(View v) {
-
-        Intent intent = new Intent(this, MapsActivity.class);
-        startActivity(intent);
-
-
     }
 }

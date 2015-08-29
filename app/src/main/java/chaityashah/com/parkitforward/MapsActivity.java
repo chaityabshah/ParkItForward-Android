@@ -2,6 +2,7 @@ package chaityashah.com.parkitforward;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
@@ -11,8 +12,11 @@ import android.os.Bundle;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.Circle;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
 
 public class MapsActivity extends FragmentActivity {
 
@@ -69,6 +73,14 @@ public class MapsActivity extends FragmentActivity {
     private void setUpMap() {
         mMap.setMyLocationEnabled(true);
         mMap.setOnMyLocationChangeListener(myLocationChangeListener);
+        mMap.addMarker(new MarkerOptions().position(new LatLng(33.778155, -84.396385)).title("2009 Red Cadillac J8R3HS").snippet("30 Minutes Remaining"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(33.777406, -84.399426)).title("2010 Blue Chevy ABC123").snippet("30 Minutes Remaining"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(33.776464, -84.395052)).title("2015 Red Buick J8R3HS").snippet("30 Minutes Remaining"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(33.776102, -84.396710)).title("2009 Red Cadillac J8R3HS").snippet("30 Minutes Remaining"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(33.776078, -84.397807)).title("2002 Red Cadillac J8R3HS").snippet("30 Minutes Remaining"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(33.775744, -84.398838)).title("1996 Red Cadillac J8R3HS").snippet("30 Minutes Remaining"));
+
+
 
         //set map type
 //        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
@@ -82,6 +94,11 @@ public class MapsActivity extends FragmentActivity {
             if(mMap != null){
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(loc, 16.0f));
             }
+            Circle circle = mMap.addCircle(new CircleOptions()
+                    .center(new LatLng(location.getLatitude(), location.getLongitude()))
+                    .radius(500)
+                    .strokeColor(Color.LTGRAY)
+                    .fillColor(Color.TRANSPARENT));
         }
     };
 }

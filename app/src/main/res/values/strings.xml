@@ -6,4 +6,6 @@
     <string name="title_activity_park">ParkActivity</string>
     <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_leaving">LeavingActivity</string>
+    <string name="title_activity_posted">Posted</string>
 </resources>
