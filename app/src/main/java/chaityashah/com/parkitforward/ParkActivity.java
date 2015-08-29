@@ -40,9 +40,9 @@ public class ParkActivity extends AppCompatActivity {
     }
     public void onButtonClick(View v) {
 
-        Intent intent = new Intent(this, MapActivity.class);
+        Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
-        
+
 
     }
 }

@@ -25,4 +25,12 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:onClick="onButtonClick" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/vinText"
+        android:layout_centerHorizontal="true"
+        android:hint="License Plate" />
 </RelativeLayout>
