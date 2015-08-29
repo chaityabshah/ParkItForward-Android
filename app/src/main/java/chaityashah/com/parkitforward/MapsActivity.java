@@ -74,11 +74,11 @@ public class MapsActivity extends FragmentActivity {
         mMap.setMyLocationEnabled(true);
         mMap.setOnMyLocationChangeListener(myLocationChangeListener);
         mMap.addMarker(new MarkerOptions().position(new LatLng(33.778155, -84.396385)).title("2009 Red Cadillac J8R3HS").snippet("30 Minutes Remaining"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(33.777406, -84.399426)).title("2010 Blue Chevy ABC123").snippet("30 Minutes Remaining"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(33.776464, -84.395052)).title("2015 Red Buick J8R3HS").snippet("30 Minutes Remaining"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(33.776102, -84.396710)).title("2009 Red Cadillac J8R3HS").snippet("30 Minutes Remaining"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(33.776078, -84.397807)).title("2002 Red Cadillac J8R3HS").snippet("30 Minutes Remaining"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(33.775744, -84.398838)).title("1996 Red Cadillac J8R3HS").snippet("30 Minutes Remaining"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(33.777406, -84.399426)).title("2010 Blue Chevy ABC123").snippet("10 Minutes Remaining"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(33.776464, -84.395052)).title("2015 Red Buick 2AAF1S").snippet("6 Minutes Remaining"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(33.776102, -84.396710)).title("2009 Grey GMC 412A2D").snippet("12 Minutes Remaining"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(33.776078, -84.397807)).title("2002 Blue Cadillac 291JJ2").snippet("27 Minutes Remaining"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(33.775744, -84.398838)).title("1996 Red Chevy 52BSS1").snippet("5 Minutes Remaining"));
 
 
 

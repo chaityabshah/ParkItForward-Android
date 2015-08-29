@@ -24,6 +24,7 @@
         android:id="@+id/button4"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="106dp" />
+        android:layout_marginBottom="106dp"
+        android:onClick="onButtonClick" />
 
 </RelativeLayout>

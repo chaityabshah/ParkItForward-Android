@@ -46,4 +46,11 @@ public class ParkActivity extends AppCompatActivity {
 
 
     }
+    public void onButtonClick1(View v) {
+
+        Intent intent = new Intent(this, LeavingActivity.class);
+        startActivity(intent);
+
+
+    }
 }
